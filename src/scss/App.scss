@@ -1,0 +1,74 @@
+@import 'base/reset';
+@import 'base/color';
+@import 'base/typography';
+@import 'layout/utilities';
+
+body {
+  background-color:$white;
+  font-family:$fontstack;
+}
+
+p {
+   margin-top:1em;
+}
+
+.vote-panel {
+  text-align: left;
+  color:$darkpurple;
+  background-color:$grey;
+  margin:.5em 0;
+  border-radius: 4px;
+  padding: 1.5em 0 0 0;
+  overflow: hidden;
+
+  &__upvotes {
+    width:32px;
+    height:63px;
+    border-radius: 40px;
+    background-color:$white;
+    margin:0 16px;
+  }
+
+  &__area {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color:$white;
+    border-radius: 4px;
+    padding: .5em 1.5em;
+    margin:0 .5em;
+    border-radius: 40px;
+  }
+
+  &__time {
+    font-size: 10px;
+    color:$white;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color:$brightred;
+    border-radius: 4px;
+    padding: .5em 1.5em;
+    margin:0 .5em;
+    border-radius: 40px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 800;
+    margin:.5em 0;
+    color:$darkpurple;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 1.2em;
+    padding: 1em;
+    border:1px $grey solid;
+    display: flex;
+    background-color: $white;
+  }
+
+}
+
+
+

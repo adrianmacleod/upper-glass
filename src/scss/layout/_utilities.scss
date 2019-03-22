@@ -1,0 +1,87 @@
+
+$scaleLength: 8;
+$unit: px;
+$imp: !important;
+
+@for $i from 1 through $scaleLength {
+  
+    $point: $i * 8;
+    $scale: $i * 1;
+  
+    .m {
+      &-#{$scale} {
+        margin:$point + $unit + $imp;
+      }
+      &t-#{$scale} {
+        margin-top:$point + $unit + $imp;
+      }
+      &r-#{$scale} {
+        margin-right:$point + $unit + $imp;
+      }
+      &b-#{$scale} {
+        margin-bottom:$point + $unit + $imp;
+      }
+      &l-#{$scale} {
+        margin-left:$point + $unit + $imp;
+      }
+      &-h#{$scale} {
+        margin-right:$point + $unit + $imp;
+        margin-left:$point + $unit + $imp;
+      }
+      &v-#{$scale} {
+        margin-top:$point + $unit + $imp; 
+        margin-bottom:$point + $unit + $imp;
+      }
+    }
+    
+    .p {
+      &#-#{$scale} {
+        padding:$point + $unit + $imp;
+      }
+      &t-#{$scale} {
+        padding-top:$point + $unit + $imp;
+      }
+      &r-#{$scale} {
+        padding-right:$point + $unit + $imp;
+      }
+      &b-#{$scale} {
+        padding-bottom:$point + $unit + $imp;
+      }
+      &l-#{$scale} {
+        padding-left:$point + $unit + $imp;
+      }
+      &h-#{$scale} {
+        padding-right:$point + $unit + $imp; 
+        padding-left:$point + $unit + $imp;
+      }
+      &v-#{$scale} {
+        padding-top:$point + $unit + $imp; 
+        padding-bottom:$point + $unit + $imp;
+      }
+    }
+    
+}
+
+
+.t {
+    &-l {
+        text-align: left + $imp;
+    }
+    &-c {
+        text-align: center + $imp;
+    }
+    &-r {
+        text-align: right + $imp;
+    }
+
+}
+
+.d {
+    &-f {
+        display: flex + $imp;
+    }
+
+    &-b {
+        display: block + $imp;
+    }
+}
